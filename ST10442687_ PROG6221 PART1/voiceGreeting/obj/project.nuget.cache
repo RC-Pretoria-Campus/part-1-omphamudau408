@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "RXceIh8jEHw=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\RC_Student_lab\\Documents\\ST10442687_ PROG6221 PART1\\voiceGreeting\\voiceGreeting.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\RC_Student_lab\\.nuget\\packages\\system.speech\\9.0.3\\system.speech.9.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
