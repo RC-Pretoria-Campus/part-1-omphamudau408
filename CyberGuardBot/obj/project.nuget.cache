@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "hHY2fmT11K0=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\RC_Student_lab\\source\\repos\\CyberGuardBot\\CyberGuardBot.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\RC_Student_lab\\.nuget\\packages\\system.speech\\9.0.3\\system.speech.9.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
