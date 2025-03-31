@@ -10,7 +10,8 @@ class Program
         PlayVoiceGreeting();
         DisplayAsciiArt();
         GreetUser();
-        
+        StartChat();
+
 
 
     }
@@ -71,12 +72,43 @@ class Program
         Console.WriteLine($"Welcome, {name}! How can I assist you today?");
         Console.ResetColor();
     }
+    static void StartChat()
+    {
+        while (true)
+        {
+            Console.Write("\nYou: ");
+            string input = Console.ReadLine()?.Trim().ToLower();
+
+            if (string.IsNullOrEmpty(input))
+            {
+                Console.WriteLine("[Please enter a valid question.]");
+                continue;
+            }
+
+            if (input == "exit" || input == "quit")
+            {
+                Console.WriteLine("Goodbye! Stay safe online.");
+                break;
+            }
+
+            string response = GetResponse(input);
+            foreach (char c in response)
+            {
+                Console.Write(c);
+                Thread.Sleep(30); // Simulating the typing effect
+            }
+            Console.WriteLine();
+        }
+    }
+}
+
+
+
+
 
     
 
-            
-        }
- 
+
 
 
 
