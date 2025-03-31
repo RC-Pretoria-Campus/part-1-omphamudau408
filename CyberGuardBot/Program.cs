@@ -33,8 +33,8 @@ class Program
         String userText = Console.ReadLine();
         synth.Speak(userText);
 
-        Console.WriteLine("Goodbye");
-        synth.Speak("Goodbye!");
+        Console.WriteLine("Let me assist you ");
+        synth.Speak("let me assist you");
 
 
 
@@ -99,9 +99,30 @@ class Program
             }
             Console.WriteLine();
         }
+        static string GetResponse(string input)
+        {
+            switch (input)
+            {
+                case "how are you?":
+                    return "I'm just a bot, but I'm here to help you with cybersecurity!";
+                case "what is a CyberSecurity":
+                    return "Cybersecurity is the practice of protecting systems, networks, and data from digital threats and unauthorized access.";
+                case "what's your purpose?":
+                    return "providing you with cybersecurity tips and awareness to keep you safe online.";
+                case "what can i ask you about?":
+                    return "You can ask me about password safety, phishing, and safe browsing.";
+                case "tell me about password safety":
+                    return "Use long, unique passwords and enable multi-factor authentication (MFA) when possible.";
+                case "what is phishing?":
+                    return "Phishing is a cyber attack where scammers trick you into revealing sensitive information via fake emails or websites.";
+                case "how do i browse safely?":
+                    return "Avoid suspicious links, keep your browser updated, and use a reliable security extension.";
+                default:
+                    return "I didn't quite understand that. Could you rephrase?";
+            }
+        }
     }
 }
-
 
 
 
